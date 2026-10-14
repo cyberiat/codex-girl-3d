@@ -1,0 +1,67 @@
+GPT 娘 · 3D 桌宠
+
+启动
+双击桌面上的“GPT娘 3D桌宠”快捷方式。项目文件夹里也有同名快捷方式。
+运行完全在本机，不需要打开 Blender 或 Meshy，也不需要联网。
+保留 D:\farm\gpt-dragon 文件夹；快捷方式依赖其中的程序和模型。
+
+操作
+左键拖动：移动桌宠。
+单击角色：挥手。
+右键：动作、转向、大小、随机动作、鼠标穿透、隐藏和退出。
+Shift + 左键横向拖动：旋转角色。
+鼠标滚轮：平滑旋转角色，可从各个角度查看模型。
+Ctrl + 鼠标滚轮：缩放。
+右键菜单“恢复正面”：转回正面。
+Ctrl + Alt + G：显示桌宠并关闭鼠标穿透。
+托盘图标：双击显示，右键打开菜单。
+
+8 个动作
+Idle 待机、Wave 挥手、Nod 点头、Bow 鞠躬、Happy 开心、Walk 原地踏步、LookAround 看看四周、Sleep 打瞌睡。
+默认播放待机，并间隔触发随机小动作。动作结束后回到待机。
+
+文件（2026-10-14 V2）
+assets\Meshy_AI_Aqua_Seraphina_1014082804_texture.glb：用户提供的高精度 Meshy 原模型，保持原样。
+assets\gpt-girl-animated-v2.glb：桌宠现在加载的动画模型，约 35 万三角面，35 根骨骼。
+blender\GPT-Girl-Desktop-Pet-V2.blend：本次通过 Blender MCP 编辑的工程，含高精度原网格、桌宠用网格、骨架和 8 个动作。两个新网格均已绑定骨架。
+blender\GPT-Girl-Desktop-Pet.blend、assets\gpt-girl-animated.glb：保留的旧版。
+verification\：8 个动作的应用内截图和自动验证报告。
+app\：Electron + Three.js 桌宠源代码。
+tools\blender-mcp\：本次使用的 MCP stdio 客户端、请求记录和工具说明。
+
+制作与限制
+新模型约 779 万三角面。Blender 内保留完整网格，并另做约 35 万面的实时版本，沿用新模型的贴图。
+35 根骨骼包含颈部、锁骨、发梢、袖子及分区裙摆。8 个动作加入预备、停顿、回弹和错开时间的跟随运动，挥手可抬至肩部以上。
+蒙皮经过手指与裙摆权重修正、网格邻接平滑及接缝处理。长发、袖口和长裙仍来自连体生成网格，大幅姿势会有布料近似变形，没有实时布料模拟。
+没有独立眼皮和口型；打瞌睡是低头姿势，不包含闭眼。行走为原地踏步。
+当前是独立桌面角色，没有接入 Codex 工作状态、语音或聊天接口。
+
+Blender 编辑
+打开 blender\GPT-Girl-Desktop-Pet-V2.blend。GPT_Girl_Rig 为骨架，动作名称与桌宠菜单对应。
+GPT_Girl_Desktop_V2 为默认显示的实时模型。
+GPT_Girl_HighRes_Master 为已绑定同一套动作的完整高模，默认关闭视口显示以提高编辑速度；查看它时先隐藏实时模型，在 Outliner 的过滤器中打开“禁用视图”列，再打开高模的显示器图标及眼睛图标。
+旧的 GPT_Girl_Mesh 隐藏保留，用于追溯初始蒙皮。
+
+Blender MCP
+已安装 MCP for Blender 2.1.9（原作者 ahujasid），本地桥接地址 127.0.0.1:9876。
+Codex 配置已添加名为 blender 的 stdio MCP 服务，使用 C:\Users\renat\.local\bin\uvx.exe 启动。数据收集关闭。
+Blender 的 MCP 插件已启用并保存偏好设置。下次打开 Blender 会自动启动桥接。
+本次场景修改通过真实 MCP 的 execute_blender_code 执行于 Blender 内；模型由 Blender 自身的 glTF 导出器导出。
+blender\mcp-*.py 是传给 Blender MCP 的场景编辑记录，不是外部 GLB 改写脚本。
+
+开发
+从 GitHub 获取项目：先安装 Git LFS、Node.js，再运行以下命令：
+git lfs install
+git clone git@github.com:cyberiat/codex-girl-3d.git
+cd codex-girl-3d
+git lfs pull
+npm ci
+npm run build
+npm start
+GLB 模型与 Blender 工程通过 Git LFS 保存；普通 ZIP 下载可能只有 LFS 指针，请使用上述方式获取完整资源。
+本机原有快捷方式不会提交，新电脑使用 npm start 启动。
+
+npm run build：构建渲染脚本。
+npm start：启动桌宠。
+node_modules\electron\dist\electron.exe . --verify：在实际渲染器中验证 8 个动作并保存截图，完成后自动退出。
+旧 blender\build_pet.py 属于第一版流程；继续修改请使用 V2 工程和 Blender MCP。

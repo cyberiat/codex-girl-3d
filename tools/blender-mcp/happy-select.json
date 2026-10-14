@@ -1,0 +1,1 @@
+{"params":{"name":"execute_blender_code","arguments":{"code":"import bpy\nr=bpy.data.objects['GPT_Girl_Rig']; r.animation_data.action=bpy.data.actions['Happy']; bpy.context.scene.frame_start=0; bpy.context.scene.frame_end=132; bpy.context.scene.frame_set(37)\nprint('Happy active')"}}}

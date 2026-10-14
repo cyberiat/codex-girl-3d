@@ -1,0 +1,1 @@
+{"params":{"name":"execute_blender_code","arguments":{"code":"import bpy\nr=bpy.data.objects['GPT_Girl_Rig']; r.animation_data.action=bpy.data.actions['LookAround']; bpy.context.scene.frame_start=0; bpy.context.scene.frame_end=180; bpy.context.scene.frame_set(30)\nprint('LookAround active')"}}}

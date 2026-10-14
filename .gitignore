@@ -1,0 +1,22 @@
+node_modules/
+app/bundle.js
+runtime.log
+
+# Machine-local shortcuts, caches, and backups
+*.lnk
+__pycache__/
+*.py[cod]
+*.blend[0-9]*
+.env
+.env.*
+!.env.example
+
+# Intermediate Blender scenes and local diagnostics
+blender/GPT-Girl-V2-MCP-working.blend
+blender/imported-model.blend
+verification/live-state.json
+verification/live-window.png
+
+# Account / subscription screenshots are not project assets
+assets/meshy-current-plan.png
+assets/meshy-download-subscription.png

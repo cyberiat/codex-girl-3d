@@ -1,0 +1,184 @@
+{
+  "frames": [
+    {
+      "name": "Idle",
+      "duration": 6,
+      "tracks": 105,
+      "bones": 35,
+      "finite": true,
+      "finiteSamples": true,
+      "motionBounds": {
+        "min": [
+          -0.5140501333808014,
+          0.0007652021933245447,
+          -0.3954561717780403
+        ],
+        "max": [
+          0.5080364418498624,
+          1.94903560321661,
+          0.4240440777935193
+        ]
+      },
+      "rightHandTravel": 0.02460502660611522
+    },
+    {
+      "name": "Wave",
+      "duration": 4.800000190734863,
+      "tracks": 105,
+      "bones": 35,
+      "finite": true,
+      "finiteSamples": true,
+      "motionBounds": {
+        "min": [
+          -0.6557610430396453,
+          0.0007644141658884117,
+          -0.39232169123880645
+        ],
+        "max": [
+          0.5194876363513765,
+          1.9472470975111154,
+          0.474962141438977
+        ]
+      },
+      "rightHandTravel": 0.5673886426223935
+    },
+    {
+      "name": "Nod",
+      "duration": 3.200000047683716,
+      "tracks": 105,
+      "bones": 35,
+      "finite": true,
+      "finiteSamples": true,
+      "motionBounds": {
+        "min": [
+          -0.5017367134720403,
+          0.0007644127462430595,
+          -0.39232169123880645
+        ],
+        "max": [
+          0.5005193729523542,
+          1.9492266981787363,
+          0.4239763116449136
+        ]
+      },
+      "rightHandTravel": 0.012091903211842787
+    },
+    {
+      "name": "Bow",
+      "duration": 5,
+      "tracks": 105,
+      "bones": 35,
+      "finite": true,
+      "finiteSamples": true,
+      "motionBounds": {
+        "min": [
+          -0.5017342590734494,
+          -0.010930807073696857,
+          -0.4160124117922507
+        ],
+        "max": [
+          0.5005205514057882,
+          1.945733674840792,
+          0.558634085367336
+        ]
+      },
+      "rightHandTravel": 0.11793864872127716
+    },
+    {
+      "name": "Happy",
+      "duration": 4.400000095367432,
+      "tracks": 105,
+      "bones": 35,
+      "finite": true,
+      "finiteSamples": true,
+      "motionBounds": {
+        "min": [
+          -0.6663222861071575,
+          -0.02359726666248452,
+          -0.3999511209260841
+        ],
+        "max": [
+          0.6549802171712973,
+          2.0631846297335628,
+          0.45171073188997213
+        ]
+      },
+      "rightHandTravel": 0.5722838849356681
+    },
+    {
+      "name": "Walk",
+      "duration": 4,
+      "tracks": 105,
+      "bones": 35,
+      "finite": true,
+      "finiteSamples": true,
+      "motionBounds": {
+        "min": [
+          -0.5411585654924481,
+          0.0007655844945521381,
+          -0.5157911982072683
+        ],
+        "max": [
+          0.5350483798624311,
+          1.970696455683303,
+          0.4567544596642928
+        ]
+      },
+      "rightHandTravel": 0.09664874477187844
+    },
+    {
+      "name": "LookAround",
+      "duration": 6,
+      "tracks": 105,
+      "bones": 35,
+      "finite": true,
+      "finiteSamples": true,
+      "motionBounds": {
+        "min": [
+          -0.5196481266300524,
+          0.0007644141660180655,
+          -0.39232169123880645
+        ],
+        "max": [
+          0.513138755970692,
+          1.9513663453909176,
+          0.42397650637131157
+        ]
+      },
+      "rightHandTravel": 0.05122309804115103
+    },
+    {
+      "name": "Sleep",
+      "duration": 8,
+      "tracks": 105,
+      "bones": 35,
+      "finite": true,
+      "finiteSamples": true,
+      "motionBounds": {
+        "min": [
+          -0.5017350189106622,
+          0.0007644140971775971,
+          -0.39232169123880645
+        ],
+        "max": [
+          0.5005193729282899,
+          1.9454374941467134,
+          0.4239765058559148
+        ]
+      },
+      "rightHandTravel": 0.041038844876142955
+    }
+  ],
+  "passed": true,
+  "errors": [],
+  "skinned": 1,
+  "triangles": 350479,
+  "renderer": {
+    "frame": 8,
+    "calls": 1,
+    "triangles": 350479,
+    "points": 0,
+    "lines": 0
+  },
+  "transparent": true
+}

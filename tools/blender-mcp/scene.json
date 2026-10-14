@@ -1,0 +1,1 @@
+{"params":{"name":"get_scene_info","arguments":{"fields":["location","size","details","modifiers","animation","settings"],"limit":30}}}

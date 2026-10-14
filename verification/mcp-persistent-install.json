@@ -1,0 +1,12 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Code executed successfully: 信息: 已保存偏好设置\n{\"enabled_in_preferences\": true, \"addon_status\": [true, true]}\n"
+    }
+  ],
+  "structuredContent": {
+    "result": "Code executed successfully: 信息: 已保存偏好设置\n{\"enabled_in_preferences\": true, \"addon_status\": [true, true]}\n"
+  },
+  "isError": false
+}

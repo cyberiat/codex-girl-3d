@@ -1,0 +1,12 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Code executed successfully: 信息: 已另存为 \"GPT-Girl-Desktop-Pet-V2.blend\"\n{\"file\": \"D:\\\\farm\\\\gpt-dragon\\\\blender\\\\GPT-Girl-Desktop-Pet-V2.blend\", \"blender\": \"5.1.2\", \"master_vertices\": 4211731, \"master_unweighted\": 0, \"master_viewport_disabled\": true, \"desktop_faces\": 350479, \"desktop_unweighted\": 0, \"bones\": 35, \"actions\": [\"Bow\", \"Happy\", \"Idle\", \"LookAround\", \"Nod\", \"Sleep\", \"Walk\", \"Wave\"], \"mcp_addon_enabled\": false}\nAnimation preview playing: True\n"
+    }
+  ],
+  "structuredContent": {
+    "result": "Code executed successfully: 信息: 已另存为 \"GPT-Girl-Desktop-Pet-V2.blend\"\n{\"file\": \"D:\\\\farm\\\\gpt-dragon\\\\blender\\\\GPT-Girl-Desktop-Pet-V2.blend\", \"blender\": \"5.1.2\", \"master_vertices\": 4211731, \"master_unweighted\": 0, \"master_viewport_disabled\": true, \"desktop_faces\": 350479, \"desktop_unweighted\": 0, \"bones\": 35, \"actions\": [\"Bow\", \"Happy\", \"Idle\", \"LookAround\", \"Nod\", \"Sleep\", \"Walk\", \"Wave\"], \"mcp_addon_enabled\": false}\nAnimation preview playing: True\n"
+  },
+  "isError": false
+}

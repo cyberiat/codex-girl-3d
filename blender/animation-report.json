@@ -1,0 +1,19 @@
+{
+  "bones": 20,
+  "vertices": 145741,
+  "actions": {
+    "Idle": 120,
+    "Wave": 120,
+    "Nod": 90,
+    "Bow": 120,
+    "Happy": 100,
+    "Walk": 120,
+    "LookAround": 150,
+    "Sleep": 180
+  },
+  "source": "D:\\farm\\gpt-dragon\\assets\\Meshy_AI_Aqua_Seraphina_1014050452_texture.glb",
+  "limitations": [
+    "No separate eyelid or mouth geometry; Sleep is a dozing pose with eyes open.",
+    "Unified long dress and hair; gestures and in-place walk use conservative ranges."
+  ]
+}

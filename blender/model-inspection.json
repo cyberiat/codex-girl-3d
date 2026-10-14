@@ -1,0 +1,28 @@
+{
+  "source": "D:\\farm\\gpt-dragon\\assets\\Meshy_AI_Aqua_Seraphina_1014050452_texture.glb",
+  "bounds": {
+    "min": [
+      -0.5095069408416748,
+      -0.4136979877948761,
+      -0.951678991317749
+    ],
+    "max": [
+      0.5102400183677673,
+      0.4207189083099365,
+      0.950249969959259
+    ]
+  },
+  "meshes": [
+    {
+      "name": "output_unwrapped",
+      "vertices": 145741,
+      "polygons": 101518,
+      "materials": [
+        "BakedMaterial"
+      ],
+      "vertex_groups": 0
+    }
+  ],
+  "armatures": [],
+  "actions": []
+}
